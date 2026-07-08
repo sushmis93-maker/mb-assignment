@@ -1,0 +1,23 @@
+{
+  "name": "mb-trade-automation",
+  "version": "1.0.0",
+  "description": "UI automation framework for trade.mb.io public trading platform",
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=desktop-chrome",
+    "test:mobile": "playwright test --project=mobile-safari",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:navigation": "playwright test tests/navigation",
+    "test:trading": "playwright test tests/trading",
+    "test:content": "playwright test tests/content",
+    "test:edge-cases": "playwright test tests/edge-cases",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://trade.mb.io"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
